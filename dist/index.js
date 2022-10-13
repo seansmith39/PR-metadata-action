@@ -9754,7 +9754,7 @@ const main = async () => {
             issue_number: pr_number,
             labels: ['markdown'],
           });
-	  break;	      
+          break;
         case 'js':
           await octokit.rest.issues.addLabels({
             owner,
