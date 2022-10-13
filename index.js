@@ -72,6 +72,7 @@ const main = async () => {
             issue_number: pr_number,
             labels: ['markdown'],
           });
+          break;
         case 'js':
           await octokit.rest.issues.addLabels({
             owner,
@@ -79,6 +80,7 @@ const main = async () => {
             issue_number: pr_number,
             labels: ['javascript'],
           });
+          break;
         case 'yml':
           await octokit.rest.issues.addLabels({
             owner,
@@ -86,6 +88,7 @@ const main = async () => {
             issue_number: pr_number,
             labels: ['yaml'],
           });
+          break;
         case 'yaml':
           await octokit.rest.issues.addLabels({
             owner,
@@ -93,6 +96,7 @@ const main = async () => {
             issue_number: pr_number,
             labels: ['yaml'],
           });
+          break;
       }
     }
 
